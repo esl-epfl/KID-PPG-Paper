@@ -37,7 +37,7 @@ tf.compat.v1.keras.backend.set_session(get_session())
 tf.keras.utils.set_random_seed(0) 
 tf.config.experimental.enable_op_determinism()
 
-n_epochs = 1
+n_epochs = 500
 batch_size = 256
 n_ch = 1
 

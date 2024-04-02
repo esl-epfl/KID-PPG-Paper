@@ -104,7 +104,7 @@ for test_subject_id in range(1, 16):
     model.load_weights('./saved_models/adaptive_w_temp_attention/model_weights/model_S' + str(int(test_subject_id)) + '.h5')
 
     with tf.device('/cpu:0'):
-        y_pred = model.predict(X_validate[..., None])
+        y_pred = model.predict(X_validate)
     
     error = np.mean(np.abs(y_pred - y_test))
     overall_errors.append(error)

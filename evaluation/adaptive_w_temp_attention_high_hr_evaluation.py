@@ -104,7 +104,7 @@ for test_subject_id in range(1, 16):
 
 
     with tf.device('/cpu:0'):
-        y_pred = model.predict(X_validate[..., None])
+        y_pred = model.predict(X_validate)
         
     plt.figure()
     plt.plot(y_pred, label = 'Prediction')

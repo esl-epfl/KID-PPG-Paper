@@ -115,14 +115,14 @@ for test_subject_id in range(1, 16):
     submodel = tf.keras.models.Model(inputs = model.inputs, outputs = model.layers[-2].output)
 
     with tf.device('/cpu:0'):
-        y_pred = submodel.predict(X_validate[..., None])
+        y_pred = submodel.predict(X_validate)
         
     y_pred_m = y_pred[:, 0]
     y_pred_std = (1 + tf.math.softplus(y_pred[:,1:2])).numpy().flatten()
     
     
     with tf.device('/cpu:0'):
-        loss = NLL(y_test, model(X_validate[..., None])).numpy()
+        loss = NLL(y_test, model(X_validate)).numpy()
                 
     nll_e.append(loss.mean())
         

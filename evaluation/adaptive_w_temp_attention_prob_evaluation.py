@@ -120,6 +120,7 @@ for test_subject_id in range(1, 16):
     
     with tf.device('/cpu:0'):
         loss = NLL(y_test, model(X_validate)).numpy()
+        loss = np.diagonal(loss)
         
     nll_e.append(loss.mean())
         

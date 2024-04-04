@@ -17,9 +17,9 @@ The following experiments are available (see Table I: Summary of evaluated model
 |-----------------|------------------------|-----------------------------|
 |Adaptive + Q-PPG | adaptive_w_q_ppg_train | adaptive_w_q_ppg_evaluation |
 |Adaptive + Attention| adaptive_w_attention_train | adaptive_w_attention_evaluation |
-|Adaptive + Temporal Attention | adaptive_w_temp_attention_train | adaptive_w_temp_attention_evaluation |
-|Adaptive + Temporal Attention + High HR Augmentation | adaptive_w_temp_attention_high_hr_train | adaptive_w_temp_attention_high_hr_evaluation|
-|Probabilistic model | adaptive_w_temp_attention_prob_train | adaptive_w_temp_attention_prob_evaluation |
+|Adaptive + Attention + High HR Augmentation | adaptive_w_attention_high_hr_train | adaptive_w_attention_high_hr_evaluation|
+|Probabilistic model | adaptive_w_attention_prob_train | adaptive_w_attention_prob_evaluation |
+|Probabilistic Temp. Attention model | adaptive_w_temp_attention_prob_train | adaptive_w_temp_attention_prob_evaluation |
 |KID-PPG | adaptive_w_temp_attention_prob_full_augment_train | adaptive_w_temp_attention_prob_full_augment_evaluation|
 
 # Reference

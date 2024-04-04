@@ -33,6 +33,9 @@ def get_session(gpu_fraction=0.333):
             config=tf.compat.v1.ConfigProto(gpu_options=gpu_options))
 tf.compat.v1.keras.backend.set_session(get_session())
 
+tf.keras.utils.set_random_seed(0)
+tf.config.experimental.enable_op_determinism()
+
 def create_temporal_pairs(X_in, y_in, groups_in, activity_in):
     
     allXs = []

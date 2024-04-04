@@ -45,6 +45,9 @@ def get_session(gpu_fraction=0.333):
             config=tf.compat.v1.ConfigProto(gpu_options=gpu_options))
 tf.compat.v1.keras.backend.set_session(get_session())
 
+tf.keras.utils.set_random_seed(0) 
+tf.config.experimental.enable_op_determinism()
+
 def channel_wise_z_score_normalization(X):
     
     ms = np.zeros((X.shape[0], 4))
@@ -96,7 +99,7 @@ def normalize_on_range(X):
 
 
 
-n_epochs = 8000
+n_epochs = 16000
 batch_size = 256
 n_ch = 1
 patience = 150

@@ -6,8 +6,6 @@ Accurate extraction of heart rate from photoplethysmography (PPG) signals remain
 
 <img src="./figures/kid_ppg_banner.svg" width="1920">
 
-![Knowledge-Informed deep-learning (DL) for heart-rate extraction (KID-PPG)](./figures/kid_ppg_banner.svg)
-
 # Run Experiments
 
 The PPGDalia dataset should be downloaded and placed in ``` ./data/```.
